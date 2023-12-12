@@ -10,8 +10,13 @@ const Footer = () => {
           </div>
 
           <div className='md:flex md:justify-center md:items-center flex flex-col  md:gap-4'>
-            <Link>Privacy Policy </Link>
-            <Link>Terms and Conditions</Link>
+            <div>
+              {" "}
+              <Link>Privacy Policy </Link>
+            </div>
+            <div>
+              <Link>Terms and Conditions</Link>
+            </div>
           </div>
         </div>
       </div>
