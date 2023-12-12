@@ -6,6 +6,7 @@ import laravel from "./../../Images/laravel.png";
 import nextjs from "./../../Images/nextjs.png";
 import python from "./../../Images/python.png";
 import vite from "./../../Images/vite.png";
+
 export default function TechnologiesCard() {
   const data = [
     {
@@ -46,25 +47,23 @@ export default function TechnologiesCard() {
     },
   ];
   return (
-    <section>
+    <section className='bg-[#161321] pb-10'>
       <div className='container mx-auto py-12'>
-        <h1 className='text-5xl text-center mb-14 font-semibold text-slate-900'>
+        <h1 className='text-3xl md:text-5xl text-center mb-14 font-semibold text-[#ddd]'>
           Technologies I Know
         </h1>
         <ul className='grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3'>
           {data.map((item) => (
             <li
               key={item.id}
-              className='relative flex flex-row-reverse bg-slate-50 p-3 rounded-xl hover:bg-slate-100 cursor-pointer transition-[0.7s]'>
+              className='relative flex flex-row-reverse bg-[#120F1C] mx-4 md:mx-0 p-3 rounded-xl hover:bg-[#070415] cursor-pointer transition-[0.7s] duration-500'>
               {/* Description */}
               <div className='peer group ml-6 flex-auto'>
-                <h4 className='mb-2 leading-6 text-slate-900 font-semibold flex items-center'>
-                  <p className='before:absolute before:-inset-3 before:rounded-2xl '>
-                    {item.techName}
-                  </p>
+                <h4 className='mb-2 leading-6 text-[#7963e0] font-semibold flex items-center'>
+                  <p className=''>{item.techName}</p>
                   <IoIosArrowForward />
                 </h4>
-                <p className='text-sm leading-6 text-slate-700 '>{item.desc}</p>
+                <p className='text-sm leading-6 text-[#777] '>{item.desc}</p>
               </div>
               {/* Logo or images */}
               <div className='flex-none w-14 h-14 rounded-full bg-white ring-1 ring-slate-900/5 shadow flex items-center justify-center overflow-hidden '>
