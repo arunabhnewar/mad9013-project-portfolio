@@ -11,8 +11,12 @@ const Footer = () => {
 
           {/* <div className='md:flex md:justify-center md:items-center flex flex-col  md:gap-4'> */}
           <div className='flex flex-col md:flex-row md:gap-4 mt-5 md:mt-0'>
-            <Link>Privacy Policy </Link>
-            <Link>Terms and Conditions</Link>
+            <Link to='/' className='hover:text-[#6D59C9] duration-500'>
+              Privacy Policy{" "}
+            </Link>
+            <Link to='/' className='hover:text-[#6D59C9] duration-500'>
+              Terms and Conditions
+            </Link>
           </div>
         </div>
       </div>

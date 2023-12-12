@@ -20,7 +20,9 @@ const Navbar = () => {
               src='https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg'
               alt='Tailwind Logo'
             />
-            <p className='ml-2 text-3xl text-[#DDDDCC]'>Portfolio</p>
+            <p className='ml-2 text-3xl text-[#DDDDCC] hover:text-[#6D59C9] duration-500'>
+              Portfolio
+            </p>
           </span>
         </Link>
 
@@ -44,21 +46,21 @@ const Navbar = () => {
         <li className='mx-4 my-6 md:my-0'>
           <Link
             to='/'
-            className='text-xl hover:text-cyan-500 duration-500 text-[#DDDDCC]'>
+            className='text-xl hover:text-[#6D59C9] duration-500 text-[#DDDDCC]'>
             HOME
           </Link>
         </li>
         <li className='mx-4 my-6 md:my-0'>
           <Link
             to='portfolio'
-            className='text-xl hover:text-cyan-500 duration-500 text-[#DDDDCC]'>
+            className='text-xl hover:text-[#6D59C9] duration-500 text-[#DDDDCC]'>
             PORTFOLIO
           </Link>
         </li>
         <li className='mx-4 my-6 md:my-0'>
           <Link
             to='contact'
-            className='text-xl hover:text-cyan-500 duration-500 text-[#DDDDCC]'>
+            className='text-xl hover:text-[#6D59C9] duration-500 text-[#DDDDCC]'>
             CONTACT
           </Link>
         </li>
