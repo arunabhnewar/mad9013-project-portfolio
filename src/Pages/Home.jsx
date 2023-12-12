@@ -1,4 +1,5 @@
 import { IoIosArrowForward } from "react-icons/io";
+import Banner from "../Components/Banner/Banner";
 import flutter from "./../Images/flutter.png";
 import java from "./../Images/java.png";
 import laravel from "./../Images/laravel.png";
@@ -48,6 +49,7 @@ const Home = () => {
 
   return (
     <div className='container mx-auto py-12'>
+      <Banner />
       <h1 className='text-5xl text-center mb-14 font-semibold text-slate-900'>
         Technologies I Know
       </h1>
