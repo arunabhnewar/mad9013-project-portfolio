@@ -1,3 +1,5 @@
+import { IoIosArrowForward } from "react-icons/io";
+
 import flutter from "./../../Images/flutter.png";
 import java from "./../../Images/java.png";
 import laravel from "./../../Images/laravel.png";
@@ -60,7 +62,7 @@ export default function TechnologiesCard() {
                   <p className='before:absolute before:-inset-3 before:rounded-2xl '>
                     {item.techName}
                   </p>
-                  {/* <IoIosArrowForward /> */}
+                  <IoIosArrowForward />
                 </h4>
                 <p className='text-sm leading-6 text-slate-700 '>{item.desc}</p>
               </div>
