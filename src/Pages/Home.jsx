@@ -1,4 +1,3 @@
-import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import flutter from "./../Images/flutter.png";
 import java from "./../Images/java.png";
@@ -69,7 +68,7 @@ const Home = () => {
             </div>
             {/* Logo or images */}
             <div className='flex-none w-14 h-14 rounded-full bg-white ring-1 ring-slate-900/5 shadow flex items-center justify-center overflow-hidden '>
-              <img src={item.image} alt={item.techName} />
+              <img className='w-[30px]' src={item.image} alt={item.techName} />
             </div>
           </li>
         ))}
