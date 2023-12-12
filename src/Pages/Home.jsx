@@ -55,7 +55,7 @@ const Home = () => {
         {data.map((item) => (
           <li
             key={item.id}
-            className='relative flex flex-row-reverse bg-slate-50 p-3 rounded-xl'>
+            className='relative flex flex-row-reverse bg-slate-50 p-3 rounded-xl hover:bg-slate-100 cursor-pointer transition-[0.7s]'>
             {/* Description */}
             <div className='peer group ml-6 flex-auto'>
               <h4 className='mb-2 leading-6 text-slate-900 font-semibold flex items-center'>
