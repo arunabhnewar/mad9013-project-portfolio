@@ -66,48 +66,50 @@ const PortfolioCard = () => {
 
   return (
     <>
-      <section className='bg-[#120F1C] pb-10 pt-16'>
-        <div className='container mx-auto py-12'>
-          <h1 className='text-3xl md:text-5xl text-center mb-14 font-semibold text-[#ddd]'>
-            Portfolio
-          </h1>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                className='flex md:flex-row flex-col bg-[#070415] p-4 rounded-md shadow-md mx-5 md:mx-0 transition-[0.7s] duration-500 hover:bg-[#141022]'>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className={`object-contain ${
-                    window.innerWidth > 768 ? "h-48 md:w-1/3" : "square-image"
-                  } md:mr-4`}
-                />
-                <div className='flex flex-col  md:w-2/3'>
-                  <h2 className='text-lg font-semibold mb-2 text-[#7963e0]'>
-                    {project.title}
-                  </h2>
-                  <p className='text-[#777] mb-4'>{project.details}</p>
-                  {/* technologies use */}
-                  <div className='pb-2'>
-                    {project.technologies.map((tech, index) => (
-                      <span
-                        key={index}
-                        className='inline-block bg-[#6552B9] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2'>
-                        #{tech}
-                      </span>
-                    ))}
+      <section className='bg-[#120F1C] pt-16 min-h-screen h-full flex items-center justify-center'>
+        <div className='container '>
+          <div className='mx-auto py-12'>
+            <h1 className='text-3xl md:text-5xl text-center mb-14 font-semibold text-[#ddd]'>
+              Portfolio
+            </h1>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+              {projects.map((project) => (
+                <div
+                  key={project.id}
+                  className='flex md:flex-row flex-col bg-[#070415] p-4 rounded-md shadow-md mx-5 md:mx-0 transition-[0.7s] duration-500 hover:bg-[#141022]'>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className={`object-contain ${
+                      window.innerWidth > 768 ? "h-48 md:w-1/3" : "square-image"
+                    } md:mr-4`}
+                  />
+                  <div className='flex flex-col  md:w-2/3'>
+                    <h2 className='text-lg font-semibold mb-2 text-[#7963e0]'>
+                      {project.title}
+                    </h2>
+                    <p className='text-[#777] mb-4'>{project.details}</p>
+                    {/* technologies use */}
+                    <div className='pb-2'>
+                      {project.technologies.map((tech, index) => (
+                        <span
+                          key={index}
+                          className='inline-block bg-[#6552B9] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2'>
+                          #{tech}
+                        </span>
+                      ))}
+                    </div>
+                    <NavLink
+                      to={project.githubLink}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-blue-500 hover:underline transition-colors duration-300'>
+                      View on GitHub
+                    </NavLink>
                   </div>
-                  <NavLink
-                    to={project.githubLink}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='text-blue-500 hover:underline transition-colors duration-300'>
-                    View on GitHub
-                  </NavLink>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
