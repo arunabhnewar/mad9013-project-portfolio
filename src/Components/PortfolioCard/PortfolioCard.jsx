@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import flutter from "./../../Images/flutter.png";
 import java from "./../../Images/java.png";
 import laravel from "./../../Images/laravel.png";
-import nextjs from "./../../Images/nextjs.png";
+import nextjs from "./../../Images/nextjs-dark.png";
 import python from "./../../Images/python.png";
 import vite from "./../../Images/vite.png";
 

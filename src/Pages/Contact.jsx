@@ -1,6 +1,8 @@
 const Contact = () => {
   return (
-    <section className='bg-[#120F1C] pb-10 pt-7' id='contact'>
+    <section
+      className='bg-[#120F1C] pb-10 pt-7 min-h-screen h-full flex items-center justify-center'
+      id='contact'>
       <div className='container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20'>
         <div className='mb-4'>
           <div className='mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12'>
@@ -103,59 +105,6 @@ const Contact = () => {
                     </p>
                   </div>
                 </li>
-                {/* New list items for phone and message */}
-                {/* <li className='flex'>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='24'
-                      height='24'
-                      viewBox='0 0 24 24'
-                      fill='none'
-                      stroke='currentColor'
-                      strokeWidth='2'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      className='h-6 w-6'>
-                      <path d='M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0'></path>
-                      <path d='M12 7v5l3 3'></path>
-                    </svg>
-                  </div>
-                  <div className='ml-4 mb-4'>
-                    <h3 className='mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white'>
-                      Phone
-                    </h3>
-                    <p className='text-gray-600 dark:text-slate-400'>
-                      +1 (123) 456-7890
-                    </p>
-                  </div>
-                </li> */}
-                {/* <li className='flex'>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='24'
-                      height='24'
-                      viewBox='0 0 24 24'
-                      fill='none'
-                      stroke='currentColor'
-                      strokeWidth='2'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      className='h-6 w-6'>
-                      <path d='M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0'></path>
-                      <path d='M12 7v5l3 3'></path>
-                    </svg>
-                  </div>
-                  <div className='ml-4 mb-4'>
-                    <h3 className='mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white'>
-                      Message
-                    </h3>
-                    <p className='text-gray-600 dark:text-slate-400'>
-                      Leave us a message
-                    </p>
-                  </div>
-                </li> */}
               </ul>
 
               <div className='mb-6 md:mb-0 block md:hidden'>
@@ -297,18 +246,6 @@ const Contact = () => {
                         name='phone'
                       />
                     </div>
-                  </div>
-                  <div className='mx-0 mb-1 sm:mb-4'>
-                    <label
-                      htmlFor='textarea'
-                      className='pb-1 text-xs uppercase tracking-wider'></label>
-                    <textarea
-                      id='textarea'
-                      name='textarea'
-                      cols='30'
-                      rows='5'
-                      placeholder='Write your message...'
-                      className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0'></textarea>
                   </div>
                 </div>
                 <div className='text-center'>
