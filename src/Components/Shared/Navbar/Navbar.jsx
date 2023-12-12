@@ -11,10 +11,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='p-5 bg-[#161321] shadow md:flex md:items-center md:justify-between'>
+    <nav className='p-5 bg-[#161321] fixed w-full shadow md:flex md:items-center md:justify-between'>
       <div className='flex justify-between items-center'>
         <Link to='/'>
-          <span className='text-2xl font-[Poppins] cursor-pointer flex items-center'>
+          <span className='text-2xl  cursor-pointer flex items-center'>
             <img
               className='h-10 inline'
               src='https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg'

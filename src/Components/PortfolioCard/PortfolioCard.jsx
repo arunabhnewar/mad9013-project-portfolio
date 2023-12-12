@@ -66,7 +66,7 @@ const PortfolioCard = () => {
 
   return (
     <>
-      <section className='bg-[#120F1C] pb-10'>
+      <section className='bg-[#120F1C] pb-10 pt-16'>
         <div className='container mx-auto py-12'>
           <h1 className='text-3xl md:text-5xl text-center mb-14 font-semibold text-[#ddd]'>
             Portfolio
