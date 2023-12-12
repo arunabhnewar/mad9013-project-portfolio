@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -38,9 +38,9 @@ const Navbar = () => {
       <ul
         className={`md:flex md:items-center z-[1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 ${
           isMenuOpen
-            ? "opacity-100 top-100 bg-[#161321] "
-            : "opacity-0 top-[-400px] bg-[#161321] "
-        } transition-all ease-in duration-500 bg-[#1D1A29] `}>
+            ? "opacity-100 top-100 bg-[#1D1A29] "
+            : "opacity-0 top-[-400px]  "
+        } transition-all ease-in duration-500  `}>
         <li className='mx-4 my-6 md:my-0'>
           <Link
             to='/'
